@@ -1,18 +1,18 @@
-let nameBoy = "Aang";
+const nameBoy = "Aang";
 let typeOFString = typeof nameBoy;
 console.log(typeOFString);
 console.log(typeof nameBoy);
 
-let numberTwo = 2;
+const numberTwo = 2;
 let typeOFNumber = typeof numberTwo;
 console.log(typeOFNumber);
 console.log(typeof numberTwo);
 
-let everybodyLies = true;
+const everybodyLies = true;
 console.log(typeof everybodyLies);
 console.log(typeof everybodyLies);
 
-let numberOfWhiteSharkInVolga = null;
+const numberOfWhiteSharkInVolga = null;
 console.log(typeof String);
 console.log(typeof numberOfWhiteSharkInVolga);
 
@@ -20,22 +20,24 @@ let cityName;
 console.log(typeof cityName);
 console.log(typeof cityName);
 
-let VeryBigNumber = 180143985094819844n;
-console.log(typeof VeryBigNumber);
-console.log(typeof VeryBigNumber);
+const veryBigNumber = 180143985094819844n;
+console.log(typeof veryBigNumber);
+console.log(typeof veryBigNumber);
 
 let symbol1 = Symbol();
 console.log(symbol1);
 console.log(typeof symbol1);
 console.log(typeof symbol1);
 
-let Avatar = { name: "Aang", age: 12 };
-var Katara = { name: "Katara", age: 15 };
+let heroAvatar = { name: "Aang", age: 12 };
+console.log(typeof Avatar);
+console.log(typeof Avatar);
+
+var heroKatara = { name: "Katara", age: 15 };
 Katara.age = 16;
 console.log(Katara.age);
-console.log(typeof Avatar);
-console.log(typeof Avatar);
-const Sokko = { name: "Sokko", age: 18 };
+
+const heroSokko = { name: "Sokko", age: 18 };
 Sokko.age = 19;
 
 const nameGirl = "Katara";
