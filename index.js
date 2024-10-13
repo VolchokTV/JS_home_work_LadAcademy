@@ -1,44 +1,189 @@
-const nameBoy = "Aang";
-let typeOFString = typeof nameBoy;
-console.log(typeOFString);
-console.log(typeof nameBoy);
+// //const nameBoy = "Aang";
+// //let typeOFString = typeof nameBoy;
+// //console.log(typeOFString);
+// //console.log(typeof nameBoy);
 
-const numberTwo = 2;
-let typeOFNumber = typeof numberTwo;
-console.log(typeOFNumber);
-console.log(typeof numberTwo);
+// //const numberTwo = 2;
+// //let typeOFNumber = typeof numberTwo;
+// //console.log(typeOFNumber);
+// //console.log(typeof numberTwo);
 
-const everybodyLies = true;
-console.log(typeof everybodyLies);
-console.log(typeof everybodyLies);
+// //const everybodyLies = true;
+// //console.log(typeof everybodyLies);
+// //console.log(typeof everybodyLies);
 
-const numberOfWhiteSharkInVolga = null;
-console.log(typeof String);
-console.log(typeof numberOfWhiteSharkInVolga);
+// //const numberOfWhiteSharkInVolga = null;
+// //console.log(typeof String);
+// //console.log(typeof numberOfWhiteSharkInVolga);
 
-let cityName;
-console.log(typeof cityName);
-console.log(typeof cityName);
+// let cityName;
+// console.log(typeof cityName);
+// console.log(typeof cityName);
 
-const veryBigNumber = 180143985094819844n;
-console.log(typeof veryBigNumber);
-console.log(typeof veryBigNumber);
+// const veryBigNumber = 180143985094819844n;
+// console.log(typeof veryBigNumber);
+// console.log(typeof veryBigNumber);
 
-let symbol1 = Symbol();
-console.log(symbol1);
-console.log(typeof symbol1);
-console.log(typeof symbol1);
+// let symbol1 = Symbol();
+// console.log(symbol1);
+// console.log(typeof symbol1);
+// console.log(typeof symbol1);
 
-let heroAvatar = { name: "Aang", age: 12 };
-console.log(typeof Avatar);
-console.log(typeof Avatar);
+// let heroAvatar = { name: "Aang", age: 12 };
+// console.log(typeof Avatar);
+// console.log(typeof Avatar);
 
-var heroKatara = { name: "Katara", age: 15 };
-Katara.age = 16;
-console.log(Katara.age);
+// //var heroKatara = { name: "Katara", age: 15 };
+// //Katara.age = 16;
+// //console.log(Katara.age);
 
-const heroSokko = { name: "Sokko", age: 18 };
-Sokko.age = 19;
+// //const heroSokko = { name: "Sokko", age: 18 };
+// //Sokko.age = 19;
 
-const nameGirl = "Katara";
-nameGirl = "Sara";
+// //const nameGirl = "Katara";
+// //nameGirl = "Sara";
+
+
+
+
+
+
+// //Дайте ответ, что будет в результате выполнения данных ниже примеров. С объяснением, почему это так.
+
+//1.         "кот" > "код"
+console.log("кот" > "код");
+// результат будет TRUE. 
+// Причина - различие слов в последней букве Т (строчная): U+0442  и Д (строчная): U+0434 так как 442 > 434
+
+//2.         "2" + 2 * "2"
+console.log( "2" + 2 * "2");
+// сначала будет выполнено умножение 2 * "2" где "2" будет автом.преобразовано в 2
+//Результат будет строка "24" как результат конкатенации строки "2" и числа 4
+console.log( "2" + 4);
+//3.         undefined == null
+console.log(undefined == null);
+// ответ TRUE , особенность языка JS 
+
+//4.         undefined != null
+  console.log(undefined != null);
+// Результат FALSE также из-за особенностей языка
+
+  //5.         null == 0
+ console.log(null == 0);
+ // Результат FALSE 
+//Когда JavaScript пытается сравнить null с 0, он не может выполнить приведение типов, так как они совершенно разные по своему значению и смыслу.
+//-null представляет отсутствие какого-либо значения или объект, который не был инициализирован, а 0 — это числовое значение.
+
+// 6.   2 > "3"
+console.log(2 > "3");
+// Результат FALSE 
+// 7.  null - false + true
+console.log(null - false + true);
+//Результат Число 1
+// 8.         1 / "l"
+console.log(1 / "1");
+//Результат Число 1
+// 9.         "2" * "3"
+console.log("2" * "3");
+// Результат число 6
+// 10.       4 + 5 + "O"
+console.log(4 + 5 + "O");
+//Результат строка "9О"
+// 11.       "l" + 4 + 5
+console.log("l" + 4 + 5);
+// Результат строка 145
+// 12.       "4" - 2
+console.log( "4" - 2);
+//Результат число 2
+// 13.       "4" - "4x"
+console.log("4" - "4x");
+// Результат NaN
+// 14.       “23” == 23
+// console.log(“23” == 23);
+// Результат  ERROR  ошибка в синтаксисе кавычек
+// 15.       null == false
+console.log(null == false);
+// 16.       " -4 "/ 0 + 1
+console.log(" -4 " / 0 + 1);
+// 17.       null + 1
+console.log(null + 1);
+// число 1
+// 18.       undefined + null
+console.log(undefined + null);
+// Результат NaN
+// 19.       1 === “1”
+//console.log(1 === “1”);
+// 20.       “2” > 10
+console.log(null == 0);
+// FALSE
+// 21.       NaN == undefined
+console.log(NaN == undefined);
+// FALSE
+
+// Работа с if-else
+// 1.   Если  переменная  a  равна  нулю,  то  выведите  'Верно',  иначе выведите  'Неверно'.  
+// Проверьте  работу  скрипта при a, равном 1, 0, -3.
+// 2.   Если переменная a больше нуля, то выведите 'Верно', иначе выведите  'Неверно'.  Проверьте  
+// работу  скрипта при a, равном 1, 0, -3.
+
+// 3.   Если переменная a меньше нуля, то выведите 'Верно', иначе выведите  'Неверно'.  Проверьте  
+// работу  скрипта при a, равном 1, 0, -3.
+
+// 4.    Если  переменная  a  больше  или  равна  нулю,  то  выведите 'Верно',  иначе  выведите  
+// 'Неверно'.  Проверьте  работу скрипта при a, равном 1, 0, -3.
+
+// 5.    Если  переменная  a  меньше  или  равна  нулю,  то  выведите 'Верно',  иначе  выведите  
+// 'Неверно'.  Проверьте  работу скрипта при a, равном 1, 0, -3.
+
+// 6.   Если переменная a не равна нулю, то выведите 'Верно', иначе выведите  'Неверно'.  Проверьте  
+// работу  скрипта при a, равном 1, 0, -3.
+
+// 7.   Если  переменная  a  равна  'test',  то  выведите  'Верно',  иначе выведите  'Неверно'.  
+// Проверьте  работу  скрипта при a, равном 'test', 'тест', 3.
+
+// 8.    Если  переменная  a  равна  '1'  и  по  значению  и  по  типу,  то выведите 'Верно', иначе 
+// выведите 'Неверно'. Проверьте работу скрипта при a, равном '1', 1, 3.
+
+// Работа с логическими переменными
+
+// 1.   Если переменная test равна true, то выведите 'Верно', иначе выведите   'Неверно'.   Проверьте  
+//  работу   скрипта   при   test, равном true, false. Напишите два варианта скрипта - с короткой 
+// записью и с длинной.
+// 2.    Если  переменная  test  не  равна  true,  то  выведите  'Верно', иначе выведите 'Неверно'. 
+// Проверьте работу скрипта при test, равном true, false. Напишите два варианта скрипта - с короткой 
+// записью и с длинной.
+
+// Работа с && (и) и || (или)
+// 1.   Если переменная a больше нуля и меньше 5-ти, то выведите 'Верно',  иначе  выведите  'Неверно'. 
+//  Проверьте  работу скрипта при a, равном 5, 0, -3, 2.
+// 2.   Если переменная a равна нулю или равна двум, то прибавьте к  ней  7,  иначе  поделите  ее  на  
+// 10.  Выведите  новое  значение переменной на экран. Проверьте работу скрипта при a, равном 5, 0, 
+// -3, 2.
+// 3.    Если  переменная  a  равна  или  меньше  1,  а  переменная  b больше  или  равна  3,  то  
+// выведите  сумму  этих  переменных, иначе выведите их разность (результат вычитания). Проверьте 
+// работу скрипта при a и b, равном 1 и 3, 0 и 6, 3 и 5.
+// 4.     Если   переменная   a   больше   2-х   и   меньше   11-ти,   или переменная  b  больше  или  
+// равна  6-ти  и  меньше  14-ти,  то выведите 'Верно', в противном случае выведите 'Неверно'.
+
+// На switch-case
+// 1.   Переменная num может принимать 4 значения: 1, 2, 3 или 4. Если она имеет значение '1', то в 
+// переменную result запишем 'зима',  если  имеет  значение  '2'  –  'весна' и так далее. Решите 
+// задачу через switch-case.
+
+// Общие задачи
+// 1.   В переменной day лежит какое-то число из интервала от 1 до
+// 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью).
+// 2.   В переменной month лежит какое-то число из интервала от 1 до  12.  Определите  в  какую  пору  
+// года  попадает  этот  месяц (зима, лето, весна, осень).
+
+// Циклы while и for
+// Решите эти задачи сначала через цикл while, а затем через цикл for.
+// 1.   Выведите столбец чисел от 1 до 100.
+// 2.   Выведите столбец чисел от 11 до 33.
+// 3.   Выведите столбец четных чисел в промежутке от 0 до 100.
+// 4.   С помощью цикла найдите сумму чисел от 1 до 100.
+
+// Задачи общие.
+// 1.    Дано   число   n=1000.   Делите   его   на  2  столько  раз,  пока результат    деления    не 
+//    станет   меньше   50.   Какое   число получится?   Посчитайте   количество   итераций,   
+// необходимых для  этого  (итерация  -  это  проход  цикла),  и  запишите  его  в переменную num.
